@@ -1,0 +1,21 @@
+{
+    "name": "novusjuris/clio",
+    "description": "Clio API Class for PHP",
+    "license": "GPLv3",
+    "keywords": ["clio"],
+    "authors": [
+        {
+            "name": "E.T.Cook",
+            "email": "e@novusjuris.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "NovusJuris\\Clio\\": "src"
+        }
+    }
+}
