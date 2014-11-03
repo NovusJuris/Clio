@@ -1,14 +1,17 @@
-<?php namespace NovusJuris\Clio\Api;
+<?php
+
+namespace NovusJuris\Clio\Api;
 
 class Base
 {
-    function __construct($session)
+
+    function __construct( Session $session )
     {
-        self::$session = $session;
+        $this->session = $session;
     }
 
-    private function data_item($params)
+    protected function data_item( $params )
     {
-        return data_klass($params)->_new($params, $session);
+        return $this->data_klass( $params )->_new( $params, $session );
     }
 }
